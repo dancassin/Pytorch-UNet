@@ -28,6 +28,6 @@ def eval_net(net, loader, device):
                 pred = (pred > 0.5).float()
                 tot += dice_coeff(pred, true_masks).item()
             pbar.update()
-
-    net.train()
+            net.train()
+            
     return tot / n_val

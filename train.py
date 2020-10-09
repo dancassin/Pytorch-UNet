@@ -18,14 +18,14 @@ from torch.utils.data import DataLoader, random_split
 
 dir_img = 'data/imgs/'
 dir_mask = 'data/masks/'
-dir_checkpoint = 'checkpoints/'
+dir_checkpoint = '../../mydrive/Biggie/UNet/'
 
 
 def train_net(net,
               device,
               epochs=5,
               batch_size=1,
-              lr=0.001,
+              lr=0.00001,
               val_percent=0.1,
               save_cp=True,
               img_scale=0.5):
